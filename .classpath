@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry exported="true" kind="lib" path="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.5/65137ebf85056473b40c311f889601646a7612ba/jackson-annotations-2.6.5.jar" sourcepath="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.5/10394a8b3d8af4885e020e2571a7633f7a0bd741/jackson-annotations-2.6.5-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.16/3a6274f658487d5bfff9af3862beff6da1e7fd52/slf4j-api-1.7.16.jar" sourcepath="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.16/974c5dd98f38036bd98b3a8f7bf00ee0d91adbdd/slf4j-api-1.7.16-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.5/d50be1723a09befd903887099ff2014ea9020333/jackson-databind-2.6.5.jar" sourcepath="/Users/haihxiao/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.5/8176652b0ade481ff1ceb1bec03c70e2eb6f1c37/jackson-databind-2.6.5-sources.jar"/>
+	<classpathentry kind="output" path="target"/>
+</classpath>

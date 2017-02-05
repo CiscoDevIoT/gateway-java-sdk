@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+// tag::repositories[]
+repositories {
+    mavenCentral()
+}
+// end::repositories[]
+
+// tag::jar[]
+jar {
+    baseName = 'gateway-java-sdk'
+    version =  '1.0.0'
+}
+// end::jar[]
+
+// tag::dependencies[]
+dependencies {
+	compile fileTree(dir: 'lib', include: '*.jar')
+ 	compile "com.google.code.gson:gson:2.3.1"
+	compile 'commons-io:commons-io:2.4'
+	compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+	compile "org.apache.commons:commons-lang3:3.4"
+	compile "org.slf4j:slf4j-simple:1.7.22"
+}
+// end::dependencies[]
+
+// tag::wrapper[]
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+compileJava {
+    // This only works when forking and passing 'javac' as an executable
+    options.compilerArgs << '-parameters'
+    options.fork = true
+    options.forkOptions.executable = 'javac'
+}
