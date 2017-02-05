@@ -50,7 +50,7 @@ class ModelUtils {
 						Parameter paramAnno = t.getAnnotation(Parameter.class);
 						if(paramAnno != null) {
 							ret.setName(getOrElse(paramAnno.name(), t.getName()));
-							ret.setDescription(getOrElse(paramAnno.description(), t.getName()));
+							ret.setDescription(getOrElse(paramAnno.description(), ret.getName()));
 							if(paramAnno.type() == ParamType.AUTO) {
 								ret.setParamType(ParamType.from(t.getType()));
 							} else {

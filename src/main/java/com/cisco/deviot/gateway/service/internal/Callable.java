@@ -9,14 +9,9 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 class Callable {
-	@JsonIgnore
 	protected transient final Logger log = LoggerFactory.getLogger(getClass());
-	@JsonIgnore
 	protected transient Method method;
-	@JsonIgnore
 	protected transient Object target;
 
 	public Method getMethod() {

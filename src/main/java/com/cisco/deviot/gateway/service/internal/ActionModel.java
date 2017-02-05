@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.cisco.deviot.gateway.common.ParamType;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @SuppressWarnings("serial")
 public class ActionModel extends Callable implements Serializable, Comparable<ActionModel> {
@@ -47,9 +46,7 @@ public class ActionModel extends Callable implements Serializable, Comparable<Ac
 	public void setParameters(List<ParameterModel> parameters) {
 		this.parameters = parameters;
 		this.needPayload = parameters.stream().anyMatch(p -> p.getParamType() == ParamType.OBJECT);
-	}
-	
-	@JsonIgnore
+	}	
 	public Map<String, ParameterModel> getParametersMap() {
 		Map<String, ParameterModel> ret = new LinkedHashMap<>();
 		for(ParameterModel param : parameters) {
