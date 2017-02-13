@@ -5,7 +5,6 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -20,6 +19,7 @@ import org.slf4j.LoggerFactory;
 import com.cisco.deviot.gateway.common.Connector;
 import com.cisco.deviot.gateway.service.internal.GatewayModel;
 import com.cisco.deviot.gateway.util.JsonUtils;
+import com.cisco.deviot.gateway.util.StringUtils;
 
 public class MqttConnector implements Connector {
 	private static final Logger log = LoggerFactory.getLogger(MqttConnector.class);

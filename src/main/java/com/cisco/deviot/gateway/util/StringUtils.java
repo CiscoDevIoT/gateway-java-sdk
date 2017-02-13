@@ -1,14 +1,6 @@
 package com.cisco.deviot.gateway.util;
 
-import java.util.Map;
-
-import org.apache.commons.lang3.text.StrSubstitutor;
-
 public class StringUtils {
-	public static String mergeTemplate(String template,Map<String,Object> map){
-		return StrSubstitutor.replace(template,map);
-	}	
-	
 	public static boolean isEmpty(String str) {
 		return str == null || str.trim().length() == 0;
 	}

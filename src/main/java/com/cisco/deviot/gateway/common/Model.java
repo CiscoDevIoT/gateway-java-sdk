@@ -18,6 +18,4 @@ public @interface Model {
 	 * This define the model type
 	 */
 	String kind() default "";
-	
-	String icon() default "";
 }
